@@ -18,7 +18,7 @@ class HomeController extends Controller
         $templateParams = new stdClass;
         $templateParams->language = "HU";
         $templateParams->current_url = "/products";
-        return DynamicTemplateMethods::getTemplateDynamicPage('fruits_website_products_index', $templateParams, 'app');
+        return DynamicTemplateMethods::getTemplateDynamicPage('fruits_website_products', $templateParams, 'app');
     }
 
     public function homeRO() {
