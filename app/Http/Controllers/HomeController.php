@@ -17,6 +17,11 @@ class HomeController extends Controller
             [
                 'layout',
                 'welcome',
+            ],
+            [ 
+                'fontawesome/css/fontawesome.min', 
+                'fontawesome/css/brands.min',
+                'fontawesome/css/solid.min' 
             ]
         );
     }
@@ -31,6 +36,11 @@ class HomeController extends Controller
             [
                 'layout',
                 'products',
+            ],
+            [ 
+                'fontawesome/css/fontawesome.min', 
+                'fontawesome/css/brands.min',
+                'fontawesome/css/solid.min' 
             ]
         );
     }

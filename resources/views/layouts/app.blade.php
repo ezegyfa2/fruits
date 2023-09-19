@@ -8,19 +8,19 @@
 
     <title>{{ config('app.name', 'Laravel') }}</title>
 
-    <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}" defer></script>
+    @if (isset($scriptPaths))
+        <!-- Scripts -->
+        @foreach ($scriptPaths as $scriptPath)
+            <script src="{{ asset('js/' . $scriptPath . '.js') }}" defer></script>
+        @endforeach
+    @endif
 
-    <!-- Fonts -->
-    <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
-    <!-- Google fonts-->
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
-
-    <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet" />
+    @if (isset($scriptPaths))
+        <!-- Styles -->
+        @foreach ($stylePaths as $stylePath)
+            <link href="{{ asset('css/' . $stylePath . '.css') }}" rel="stylesheet" />
+        @endforeach
+    @endif
 </head>
 <body>
     <div id="app">
