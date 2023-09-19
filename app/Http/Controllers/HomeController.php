@@ -3,14 +3,15 @@
 namespace App\Http\Controllers;
 
 use Ezegyfa\LaravelHelperMethods\DynamicTemplateMethods;
+use Illuminate\Support\Facades\App;
 use stdClass;
 
 class HomeController extends Controller
 {
-    public function home() {
+    public function welcome() {
         $templateParams = new stdClass;
-        $templateParams->language = "HU";
-        $templateParams->current_url = "/home";
+        $templateParams->current_language = strtoupper(App::currentLocale());
+        $templateParams->current_url = "";
         return DynamicTemplateMethods::getTemplateDynamicPage(
             'fruits_welcome', 
             $templateParams, 
@@ -28,7 +29,7 @@ class HomeController extends Controller
 
     public function products() {
         $templateParams = new stdClass;
-        $templateParams->language = "HU";
+        $templateParams->current_language = strtoupper(App::currentLocale());
         $templateParams->current_url = "/products";
         return DynamicTemplateMethods::getTemplateDynamicPage(
             'fruits_products', 

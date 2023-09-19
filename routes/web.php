@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\HomeController;
+use Ezegyfa\LaravelHelperMethods\Language\LanguageMethods;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,8 +15,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'App\Http\Controllers\HomeController@home');
-Route::get('/home', 'App\Http\Controllers\HomeController@home');
-Route::get('/products', 'App\Http\Controllers\HomeController@products');
-Route::get('/home/RO', 'App\Http\Controllers\HomeController@homeRO');
-Route::get('/products/RO', 'App\Http\Controllers\HomeController@productsRO');
+Route::middleware('setLanguage')->group(function () {
+    LanguageMethods::createTranslatedGetRoutes('/', [HomeController::class, 'welcome']);
+    LanguageMethods::createTranslatedGetRoutes('/products', [HomeController::class, 'products']);
+});
