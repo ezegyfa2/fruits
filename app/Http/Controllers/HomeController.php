@@ -12,8 +12,9 @@ class HomeController extends Controller
         $templateParams = new stdClass;
         $templateParams->current_language = strtoupper(App::currentLocale());
         $templateParams->current_url = "";
-        return DynamicTemplateMethods::getTemplateDynamicPage(
-            'fruits_welcome', 
+        return DynamicTemplateMethods::getTranslatedTemplateDynamicPage(
+            'fruits_welcome',
+            'node_modules/fruits-vue-components/src/Welcome/CompiledTemplate.json', 
             $templateParams, 
             [
                 'layout',
@@ -31,8 +32,9 @@ class HomeController extends Controller
         $templateParams = new stdClass;
         $templateParams->current_language = strtoupper(App::currentLocale());
         $templateParams->current_url = "/products";
-        return DynamicTemplateMethods::getTemplateDynamicPage(
-            'fruits_products', 
+        return DynamicTemplateMethods::getTranslatedTemplateDynamicPage(
+            'fruits_products',
+            'node_modules/fruits-vue-components/src/Products/CompiledTemplate.json', 
             $templateParams, 
             [
                 'layout',
