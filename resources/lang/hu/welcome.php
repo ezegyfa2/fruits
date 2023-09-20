@@ -2,35 +2,35 @@
 
 return [
     'description1' => [
-        'title' => 'Ma délelőtt a nap éltető sugarai ébresztették az érő gyümölcsöt.',
-        'content' => 'UT ENIM AD MINIMA VENIAM',
+        'title' => 'Kiváló minőségű gyümölcsök',
+        'content' => 'Ültessen egészséges gyümölcsfákat otthoni kertjébe vagy üzleti telepítéshez.',
         'button_content' => 'Tovább',
     ],
     'article_with_two_images1' => [
-        'title' => 'Madéfalva neve a Szeresd az Istent!',
-        'content' => 'Madéfalva neve a Szeresd az Istent! parancsolat latin nevéből ered. Annak a felismeréséből származik, hogy az Isten szeretete ösztönös, belülről jövő késztetés, hogy az emberi szellemnek úgy része ez a parancsolat, ahogyan a pataknak is van elve, amit követnie kell.',
+        'title' => 'Üdvözöljük a gyümölcsösünkben!',
+        'content' => 'Amennyiben a gyümölcsfák ültetése vagy a friss termés gyűjtése érdekli Önt, nálunk megtalálja a legjobb választást. A gyümölcsösünkben minden szezonban gazdag termés várja, amelyet garantáltan élvezni fog. Ráadásul hagyományos értékeket és minőséget is kap hozzá, hiszen már évtizedek óta szolgáljuk a közösségünket. Válassza a frissességet és az ízeket – válassza a mi gyümölcsöstünket.',
     ],
     'artical_with_big_button' => [
-        'title' => 'A Madéfalvi Gyümölcs',
+        'title' => 'A Friss gyümölcsünk',
         'content' => 'Helyi alapanyagból. Helyi erőforrásokkal. Helyi munkaerővel. Helyieknek.',
         'button_content' => 'Garantálja',
     ],
     'description2' => [
-        'title' => 'Ma délben a falevelek árnyékukkal védték az almákat.',
-        'content' => 'UT ENIM AD MINIMA VENIAM',
+        'title' => 'Friss termékek minden szezonban',
+        'content' => 'Gyűjtsd be a saját termésedet, amely garantáltan friss és ízletes lesz.',
         'button_content' => 'Tovább',
     ],
     'article_with_two_images2' => [
-        'title' => 'Amadéfalva',
-        'content' => 'Eredeti neve Amadéfalva volt. Első birtokosáról kapta a nevét. A falut már 1333-ban említik Csíkrákos fiókegyházaként, de önálló községként csak 1567-ben szerepel még Amadéfalva néven.\n\n1764. január 7-én az osztrák császári katonaság itt mészárolt le több száz székelyt, akik tiltakoztak a határőrezred felállítása ellen, és az adóztatás ellen. Ezt a gyalázatos eseményt „siculicidiumnak” vagy „madéfalvi veszedelemnek” nevezik. Ezután indult meg a székelyek tömeges kivándorlása. 1910-ben 1908, túlnyomórészt magyar lakosa volt.\n\nA trianoni békeszerződésig Csík vármegye Felcsíki járásához tartozott. 1992-ben 2812 lakosából 2644 magyar és 167 román volt.',
+        'title' => 'Friss Gyümölcsök',
+        'content' => 'Egész évben élvezheti a friss gyümölcsök kínálatát, hiszen minden évszakban más és más gyümölcsök érnek meg. Legyen szó tavaszi eperről, nyári sárgabarackról vagy őszi almafélékről, mindig van valami friss és finom választék a kertünkben. Ezek a gyümölcsök nemcsak egészségesek, hanem ízletesek is, így minden évszakban élvezhetjük a természet adta ajándékokat.',
     ],
     'description3' => [
-        'title' => 'Ma délután a lemenő nap aranyozta be az érett almákat.',
-        'content' => 'UT ENIM AD MINIMA VENIAM',
+        'title' => 'Hagyomány és minőség',
+        'content' => 'Évtizedek óta büszkén szolgáljuk a közösségünket kiváló minőségű gyümölcsökkel.',
         'button_content' => 'Tovább',
     ],
     'article_with_two_images3' => [
-        'title' => 'Jézus Szíve tiszteletére',
-        'content' => 'A település fontosabb részei Patakelve, Alszeg, Vargaszeg, Állomás környéke, és a Főút mellett. A falu plébánosa Bartalus Jakab Zoltán. A „Zöld Péter” Általános Iskola igazgatója Máté Sándor.\n\nAz 1764. évi mészárlás helyén 1905. október 8-án avatták fel az emlékművet Köllő Miklós alkotását, a helyén egykor állt sírkereszt a csíkszentmihályi templom kertjében áll. Római katolikus temploma 1913-14-ben épült Jézus Szíve tiszteletére.',
+        'title' => 'Szedd magad',
+        'content' => 'A "szedd magad" gyümölcsszedési lehetőség egy kiváló módja annak, hogy közvetlenül kapcsolódhasson a természethez és élvezhesse a friss gyümölcsök ízét. Ezzel az élménnyel lehetősége van saját kezével válogatni és betakarítani a legjobb minőségű gyümölcsöket, miközben megismerheti a termesztés folyamatát. A "szedd magad" gyümölcsszedés nemcsak szórakoztató, hanem segít az embereknek is közelebb kerülni a mezőgazdasági termeléshez és megbecsülni a friss termések értékét.',
     ],
 ];

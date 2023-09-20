@@ -7,9 +7,9 @@ return [
         'products_text' => 'Products',
     ],
     'footer' => [
-        'copyright' => [
-            'content' => 'Cím: Siculeni 106, 537295, HR./nTelefon: 0266 379107/nFax: 0266 316951\nEmail: madefalva@yahoo.com',
-        ],
+        'address' => 'Cím: Budapest, Teréz körút 106., 1066',
+        'phone' => 'Telefon: +36216314567',
+        'email' => 'Email: almaprojekt@alma.hu',
         'privacy_policy' => 'Privacy policy',
     ],
 ];
