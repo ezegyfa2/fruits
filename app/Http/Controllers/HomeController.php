@@ -16,7 +16,6 @@ class HomeController extends Controller
             'fruits_welcome', 
             $templateParams, 
             [
-                'layout',
                 'welcome',
             ],
             [ 
@@ -35,7 +34,6 @@ class HomeController extends Controller
             'fruits_products', 
             $templateParams, 
             [
-                'layout',
                 'products',
             ],
             [ 
