@@ -3,20 +3,17 @@
 namespace App\Http\Controllers;
 
 use Ezegyfa\LaravelHelperMethods\DynamicTemplateMethods;
+use Ezegyfa\LaravelHelperMethods\Language\LanguageMethods;
 use Illuminate\Support\Facades\App;
 use stdClass;
 
 class HomeController extends Controller
 {
     public function welcome() {
-        $templateParams = new stdClass;
-        $templateParams->current_language = strtoupper(App::currentLocale());
-        $templateParams->current_url = "";
         return DynamicTemplateMethods::getTemplateDynamicPage(
             'fruits_welcome', 
-            $templateParams, 
+            $this->getTemplateParams(), 
             [
-                'layout',
                 'welcome',
             ],
             [ 
@@ -28,14 +25,10 @@ class HomeController extends Controller
     }
 
     public function products() {
-        $templateParams = new stdClass;
-        $templateParams->current_language = strtoupper(App::currentLocale());
-        $templateParams->current_url = "/products";
         return DynamicTemplateMethods::getTemplateDynamicPage(
             'fruits_products', 
-            $templateParams, 
+            $this->getTemplateParams(), 
             [
-                'layout',
                 'products',
             ],
             [ 
@@ -44,5 +37,13 @@ class HomeController extends Controller
                 'fontawesome/css/solid.min' 
             ]
         );
+    }
+
+    protected function getTemplateParams() {
+        $templateParams = new stdClass;
+        $templateParams->current_language = strtoupper(App::currentLocale());
+        $templateParams->languages = LanguageMethods::getTranslationUrlObjects();
+        $templateParams->current_url = "";
+        return $templateParams;
     }
 }

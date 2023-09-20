@@ -26,6 +26,11 @@ mix.webpackConfig({
 });
 
 mix.js('resources/js/basicPackages.js', 'public/js').vue()
-mix.js('resources/js/layout.js', 'public/js').vue()
 mix.js('resources/js/welcome.js', 'public/js').vue()
 mix.js('resources/js/products.js', 'public/js').vue()
+let nodeModulesFolderPath = path.resolve(
+    __dirname,
+    "node_modules"
+)
+mix.copy(nodeModulesFolderPath + '/bootstrap/dist/css/bootstrap.min.css', 'public/css')
+mix.copy(nodeModulesFolderPath + '/bootstrap-vue/dist/bootstrap-vue.min.css', 'public/css')
