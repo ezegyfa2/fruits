@@ -3,18 +3,17 @@
 namespace App\Http\Controllers;
 
 use Ezegyfa\LaravelHelperMethods\DynamicTemplateMethods;
+use Ezegyfa\LaravelHelperMethods\Language\LanguageMethods;
 use Illuminate\Support\Facades\App;
 use stdClass;
 
 class HomeController extends Controller
 {
     public function welcome() {
-        $templateParams = new stdClass;
-        $templateParams->current_language = strtoupper(App::currentLocale());
-        $templateParams->current_url = "";
-        return DynamicTemplateMethods::getTemplateDynamicPage(
+        return DynamicTemplateMethods::getTranslatedTemplateDynamicPage(
             'fruits_welcome', 
-            $templateParams, 
+            'node_modules/fruits-vue-components/src/Welcome/CompiledTemplate.json',
+            $this->getTemplateLayoutParams(), 
             [
                 'welcome',
             ],
@@ -27,12 +26,10 @@ class HomeController extends Controller
     }
 
     public function products() {
-        $templateParams = new stdClass;
-        $templateParams->current_language = strtoupper(App::currentLocale());
-        $templateParams->current_url = "/products";
-        return DynamicTemplateMethods::getTemplateDynamicPage(
+        return DynamicTemplateMethods::getTranslatedTemplateDynamicPage(
             'fruits_products', 
-            $templateParams, 
+            'node_modules/fruits-vue-components/src/Products/CompiledTemplate.json',
+            $this->getTemplateLayoutParams(), 
             [
                 'products',
             ],
@@ -42,5 +39,11 @@ class HomeController extends Controller
                 'fontawesome/css/solid.min' 
             ]
         );
+    }
+
+    protected function getTemplateLayoutParams() {
+        $templateParams = DynamicTemplateMethods::getTemplateLayoutParams();
+        $templateParams->products_url = __('routes.products');
+        return $templateParams;
     }
 }
