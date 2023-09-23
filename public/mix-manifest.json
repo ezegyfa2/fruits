@@ -2,6 +2,8 @@
     "/js/basicPackages.js": "/js/basicPackages.js",
     "/js/welcome.js": "/js/welcome.js",
     "/js/products.js": "/js/products.js",
+    "/app/Templates/Welcome.json": "/app/Templates/Welcome.json",
+    "/app/Templates/Products.json": "/app/Templates/Products.json",
     "/css/bootstrap.min.css": "/css/bootstrap.min.css",
     "/css/bootstrap-vue.min.css": "/css/bootstrap-vue.min.css"
 }
