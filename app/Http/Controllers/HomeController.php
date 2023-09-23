@@ -12,7 +12,7 @@ class HomeController extends Controller
     public function welcome() {
         return DynamicTemplateMethods::getTranslatedTemplateDynamicPage(
             'fruits_welcome', 
-            'node_modules/fruits-vue-components/src/Welcome/CompiledTemplate.json',
+            'Welcome',
             $this->getTemplateLayoutParams(), 
             [
                 'welcome',
@@ -28,7 +28,7 @@ class HomeController extends Controller
     public function products() {
         return DynamicTemplateMethods::getTranslatedTemplateDynamicPage(
             'fruits_products', 
-            'node_modules/fruits-vue-components/src/Products/CompiledTemplate.json',
+            'Products',
             $this->getTemplateLayoutParams(), 
             [
                 'products',
