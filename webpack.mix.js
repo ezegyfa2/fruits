@@ -35,8 +35,8 @@ mix.webpackConfig(currentWebpackConfig)
 
 //mix.js('resources/js/products.js', 'public/js').vue()
 //mix.sass('resources/sass/products.scss', 'public/css/')
-//compileAssets(mix, 'fruits-vue-components', [ 'Products' ])
-compileAssets(mix, 'fruits-vue-components', [ 'Welcome' ])
+compileAssets(mix, 'fruits-vue-components', [ 'Products' ])
+//compileAssets(mix, 'fruits-vue-components', [ 'Welcome' ])
 //replaceComponentRegistrations('./node_modules/helper-vue-components/src')
 
 //headerBackgroundImageGenerator.generate()
