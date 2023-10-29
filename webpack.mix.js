@@ -1,6 +1,10 @@
-const mix = require('laravel-mix');
-const path = require('path');
-mix.webpackConfig({
+const mix = require('laravel-mix')
+const path = require('path')
+const { size } = require('lodash')
+require('laravel-mix-compress')
+require('helper-vue-components/AssetCompiler.js')
+
+global.currentWebpackConfig = {
     module: {
         rules: [
             {
@@ -10,31 +14,32 @@ mix.webpackConfig({
             {
                 test: /\.scss$/,
                 use: [
-                  'sass-loader'
+                    'sass-loader'
                 ]
             }
         ]
     },
-    resolve: {
-        alias: {
-            "@sass": path.resolve(
-                __dirname,
-                "resources/sass"
-            )
-        }
+    output: {
+        chunkFilename: 'js/[name].bundle.js',
+        publicPath: '/',
     }
-});
+}
 
-mix.js('resources/js/basicPackages.js', 'public/js').vue()
+mix.webpackConfig(currentWebpackConfig)
+//mix.js('resources/js/welcome.js', 'public/js').vue()
+//mix.sass('resources/sass/welcome.scss', 'public/css/')
+/*mix.copy(
+    path.join('node_modules', 'dynamic-web-vue-components', 'src', 'Welcome', 'CompiledTemplate.json'), 
+    path.join('app', 'Templates', 'Welcome.json')
+)*/
 
-mix.js('resources/js/welcome.js', 'public/js').vue()
-mix.js('resources/js/products.js', 'public/js').vue()
-mix.copy('node_modules/fruits-vue-components/src/Welcome/CompiledTemplate.json', 'app/Templates/Welcome.json')
-mix.copy('node_modules/fruits-vue-components/src/Products/CompiledTemplate.json', 'app/Templates/Products.json')
+//mix.js('resources/js/products.js', 'public/js').vue()
+//mix.sass('resources/sass/products.scss', 'public/css/')
+//compileAssets(mix, 'fruits-vue-components', [ 'Products' ])
+compileAssets(mix, 'fruits-vue-components', [ 'Welcome' ])
+//replaceComponentRegistrations('./node_modules/helper-vue-components/src')
 
-let nodeModulesFolderPath = path.resolve(
-    __dirname,
-    "node_modules"
-)
-mix.copy(nodeModulesFolderPath + '/bootstrap/dist/css/bootstrap.min.css', 'public/css')
-mix.copy(nodeModulesFolderPath + '/bootstrap-vue/dist/bootstrap-vue.min.css', 'public/css')
+//headerBackgroundImageGenerator.generate()
+//articleImageGenerator.generate()
+//latestWorkImageGenerator.generate()
+//replaceImageCache('app/Http/ImageCache.php')
