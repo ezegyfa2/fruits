@@ -11,5 +11,6 @@ return [
         'phone' => 'Telefon: +36216314567',
         'email' => 'Email: almaprojekt@alma.hu',
         'privacy_policy' => 'Privacy policy',
+        'created_by' => 'Created by',
     ],
 ];
