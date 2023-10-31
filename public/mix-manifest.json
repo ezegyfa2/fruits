@@ -1,6 +1,4 @@
 {
-    "/js/basicPackages.js": "/js/basicPackages.js",
-    "/js/products.js": "/js/products.js",
-    "/css/products.css": "/css/products.css",
-    "/app/Templates/products.json": "/app/Templates/products.json"
+    "/app/Templates/Welcome.json": "/app/Templates/Welcome.json",
+    "/app/Templates/Products.json": "/app/Templates/Products.json"
 }

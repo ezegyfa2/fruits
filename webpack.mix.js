@@ -28,14 +28,18 @@ global.currentWebpackConfig = {
 mix.webpackConfig(currentWebpackConfig)
 //mix.js('resources/js/welcome.js', 'public/js').vue()
 //mix.sass('resources/sass/welcome.scss', 'public/css/')
-/*mix.copy(
-    path.join('node_modules', 'dynamic-web-vue-components', 'src', 'Welcome', 'CompiledTemplate.json'), 
+mix.copy(
+    path.join('node_modules', 'fruits-vue-components', 'src', 'Welcome', 'CompiledTemplate.json'), 
     path.join('app', 'Templates', 'Welcome.json')
-)*/
+)
+mix.copy(
+    path.join('node_modules', 'fruits-vue-components', 'src', 'Products', 'CompiledTemplate.json'), 
+    path.join('app', 'Templates', 'Products.json')
+)
 
 //mix.js('resources/js/products.js', 'public/js').vue()
 //mix.sass('resources/sass/products.scss', 'public/css/')
-compileAssets(mix, 'fruits-vue-components', [ 'Products' ])
+//compileAssets(mix, 'fruits-vue-components', [ 'Products' ])
 //compileAssets(mix, 'fruits-vue-components', [ 'Welcome' ])
 //replaceComponentRegistrations('./node_modules/helper-vue-components/src')
 

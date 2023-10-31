@@ -1,1 +1,157 @@
-{"type":"page","data":{"navigation_bar_section":{"type":"fruits-navigation-bar","data":{"brand_section":{"type":"fruits-brand-image","data":{"url":"/home","image_url":"/assets/img/logo_small.svg","image_alt":"--layout.navbar.image_alt"}},"about_us_text":"--layout.navbar.about_us_text","products_text":"--layout.navbar.products_text","language":"EN","current_url":"/products"}},"content_sections":[{"type":"fruits-carousel"},{"type":"fruits-card","data":{"content_section":{"type":"fruits-articles-small-text-content-with-subtitle","data":{"title":"--products.card.title","subtitle":"--products.card.subtitle","content":"--products.card.content","top_image_url":"/assets/img/brand_element_01.svg","top_image_alt":"...","bottom_image_url":"/assets/img/brand_element_02.svg","bottom_image_alt":"...","added_classes":{".content":["mb-0"]}}}}},{"type":"fruits-articles-small-text-content-with-big-button","data":{"title":"--products.artical_with_big_button.title","content":"--products.artical_with_big_button.content","button_content":"--products.artical_with_big_button.button_content","url":"/","left_image_url":"/assets/img/gajjak_1.svg","left_image_alt":"...","right_image_url":"/assets/img/gajjak_2.svg","right_image_alt":"...","added_classes":{".content":["mb-0"]}}}],"footer_section":{"type":"fruits-footer","data":{"icon_links_section":{"type":"wertically-icon-links","data":{"icon_sections":[{"type":"fruits-button-icon-link","data":{"url":"","icon_class":"fab fa-facebook-f"}},{"type":"fruits-button-icon-link","data":{"url":"","icon_class":"fab fa-twitter"}},{"type":"fruits-button-icon-link","data":{"url":"","icon_class":"fas fa-envelope"}}]}},"copyright":{"address":"--layout.footer.address", "phone":"--layout.footer.phone", "email":"--layout.footer.email"},"image_url":"/assets/img/logo_small.svg","image_alt":"..."}}}}
+{
+    "type": "fruits-page",
+    "data": {
+        "navigation_bar_section": {
+            "type": "fruits-navigation-bar",
+            "data": {
+                "title": "Fruits",
+                "title_url": "/",
+                "link_sections": [
+                    {
+                        "type": "fruits-navigation-link",
+                        "data": {
+                            "url": "",
+                            "content": "--layout.navbar.about_us_text"
+                        }
+                    },
+                    {
+                        "type": "fruits-navigation-link",
+                        "data": {
+                            "url": "/products",
+                            "content": "--layout.navbar.products_text"
+                        }
+                    },
+                    {
+                        "type": "fruits-language-button",
+                        "data": {
+                            "current_language": "EN",
+                            "languages": [
+                                {
+                                    "name": "EN",
+                                    "url": "http://fruits.test/products"
+                                },
+                                {
+                                    "name": "HU",
+                                    "url": "http://fruits.test/termekek"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        "content_sections": [
+            {
+                "type": "fruits-carousel-container",
+                "data": {
+                    "content_section": {
+                        "type": "fruits-carousel",
+                        "data": {
+                            "slide_sections": [
+                                {
+                                    "type": "fruits-zoom-carousel-slide",
+                                    "data": {
+                                        "background_image_source": "/assets/img/fruit_1.jpg"
+                                    }
+                                },
+                                {
+                                    "type": "fruits-zoom-carousel-slide",
+                                    "data": {
+                                        "background_image_source": "/assets/img/fruit_2.jpg"
+                                    }
+                                },
+                                {
+                                    "type": "fruits-zoom-carousel-slide",
+                                    "data": {
+                                        "background_image_source": "/assets/img/fruit_3.jpg"
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                }
+            },
+            {
+                "type": "fruits-card",
+                "data": {
+                    "content_section": {
+                        "type": "fruits-articles-small-text-content-with-subtitle",
+                        "data": {
+                            "title": "--products.card.title",
+                            "subtitle": "--products.card.subtitle",
+                            "content": "--products.card.content",
+                            "top_image_url": "/assets/img/brand_element_01.svg",
+                            "top_image_alt": "...",
+                            "bottom_image_url": "/assets/img/brand_element_02.svg",
+                            "bottom_image_alt": "...",
+                            "added_classes": {
+                                ".content": [
+                                    "mb-0"
+                                ]
+                            }
+                        }
+                    }
+                }
+            },
+            {
+                "type": "fruits-articles-small-text-content-with-big-button",
+                "data": {
+                    "title": "--products.artical_with_big_button.title",
+                    "content": "--products.artical_with_big_button.content",
+                    "button_content": "--products.artical_with_big_button.button_content",
+                    "url": "/",
+                    "left_image_url": "/assets/img/gajjak_1.svg",
+                    "left_image_alt": "...",
+                    "right_image_url": "/assets/img/gajjak_2.svg",
+                    "right_image_alt": "...",
+                    "added_classes": {
+                        ".content": [
+                            "mb-0"
+                        ]
+                    }
+                }
+            }
+        ],
+        "footer_section": {
+            "type": "fruits-footer",
+            "data": {
+                "icon_links_section": {
+                    "type": "wertically-icon-links",
+                    "data": {
+                        "icon_sections": [
+                            {
+                                "type": "fruits-button-icon-link",
+                                "data": {
+                                    "url": "",
+                                    "icon_class": "fab fa-facebook-f"
+                                }
+                            },
+                            {
+                                "type": "fruits-button-icon-link",
+                                "data": {
+                                    "url": "",
+                                    "icon_class": "fab fa-twitter"
+                                }
+                            },
+                            {
+                                "type": "fruits-button-icon-link",
+                                "data": {
+                                    "url": "",
+                                    "icon_class": "fas fa-envelope"
+                                }
+                            }
+                        ]
+                    }
+                },
+                "copyright": {
+                    "address": "--layout.footer.address",
+                    "phone": "--layout.footer.phone",
+                    "email": "--layout.footer.email"
+                },
+                "created_by": "--layout.footer.created_by",
+                "url": "/",
+                "logo_class": "fa-solid fa-apple-whole"
+            }
+        }
+    }
+}
