@@ -1,4 +1,7 @@
 {
-    "/app/Templates/Welcome.json": "/app/Templates/Welcome.json",
-    "/app/Templates/Products.json": "/app/Templates/Products.json"
+    "/js/1.1/basicPackages.js": "/js/1.1/basicPackages.js",
+    "/js/1.1/welcome.js": "/js/1.1/welcome.js",
+    "/js/1.1/products.js": "/js/1.1/products.js",
+    "/css/1.1/products.css": "/css/1.1/products.css",
+    "/css/1.1/welcome.css": "/css/1.1/welcome.css"
 }

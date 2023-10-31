@@ -11,14 +11,14 @@
     @if (isset($scriptPaths))
         <!-- Scripts -->
         @foreach ($scriptPaths as $scriptPath)
-            <script src="{{ asset('js/' . $scriptPath . '.js') }}" defer></script>
+            <script src="{{ asset('js/1.1/' . $scriptPath . '.js') }}" defer></script>
         @endforeach
     @endif
 
     @if (isset($scriptPaths))
         <!-- Styles -->
         @foreach ($stylePaths as $stylePath)
-            <link href="{{ asset('css/' . $stylePath . '.css') }}" rel="stylesheet" />
+            <link href="{{ asset('css/1.1/' . $stylePath . '.css') }}" rel="stylesheet" />
         @endforeach
     @endif
 </head>
